@@ -1,0 +1,2801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrandMart Retail Operating System | Zoho Proposal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+/* ==========================================================================
+   GrandMart Retail Operating System - Executive Proposal Stylesheet
+   Designed for clarity, legibility, and business rigor.
+   Zero "AI-slop" purple/blue neon gradients. Authentic corporate editorial design.
+   ========================================================================== */
+
+:root {
+  /* Editorial Color Palette */
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-subtle: #f1f5f9;
+  --bg-dark: #0f172a;
+  
+  --text-main: #0f172a;
+  --text-body: #334155;
+  --text-muted: #64748b;
+  --text-light: #f8fafc;
+  
+  --border-color: #e2e8f0;
+  --border-subtle: #edf2f7;
+  --border-focus: #0f172a;
+
+  /* Retail Business Accents */
+  --brand-navy: #1e293b;
+  --brand-navy-subtle: #f8fafc;
+  
+  --accent-green: #047857;
+  --accent-green-bg: #ecfdf5;
+  --accent-green-border: #a7f3d0;
+  
+  --accent-amber: #b45309;
+  --accent-amber-bg: #fffbeb;
+  --accent-amber-border: #fde68a;
+  
+  --accent-red: #b91c1c;
+  --accent-red-bg: #fef2f2;
+  --accent-red-border: #fecaca;
+
+  /* Product Brand Accents (Subtle, Muted) */
+  --app-inv: #0d9488;
+  --app-crm: #2563eb;
+  --app-people: #d97706;
+  --app-desk: #7c3aed;
+  --app-books: #059669;
+  --app-analytics: #475569;
+  --app-me: #dc2626;
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 15px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header & Navigation */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--border-color);
+  backdrop-filter: blur(8px);
+}
+
+.nav-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-logo-text {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--brand-navy);
+}
+
+.brand-divider {
+  color: var(--text-muted);
+}
+
+.brand-sub {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 4px 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: color 0.15s ease;
+}
+
+.nav-links a:hover {
+  color: var(--text-main);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+
+.btn-primary {
+  background-color: var(--brand-navy);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #000000;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: var(--text-main);
+  border-color: var(--border-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-subtle);
+  border-color: #cbd5e1;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  padding: 56px 0 44px 0;
+}
+
+.meta-tag-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 0.85rem;
+}
+
+.status-pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-ready {
+  background-color: var(--accent-green-bg);
+  color: var(--accent-green);
+  border: 1px solid var(--accent-green-border);
+}
+
+.meta-date, .meta-scope {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.hero-title {
+  font-size: 2.35rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+  max-width: 980px;
+  margin-bottom: 14px;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-body);
+  max-width: 860px;
+  margin-bottom: 36px;
+  line-height: 1.5;
+}
+
+/* KPI Strip */
+.kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.kpi-card {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px 20px;
+}
+
+.kpi-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.kpi-value {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  letter-spacing: -0.02em;
+}
+
+.kpi-sub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.highlight-benefit {
+  background-color: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.highlight-benefit .kpi-value {
+  color: var(--accent-green);
+}
+
+.highlight-roi {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.highlight-roi .kpi-value {
+  color: #0284c7;
+}
+
+/* Content Blocks */
+.main-content {
+  padding: 48px 0 80px 0;
+}
+
+.content-block {
+  margin-bottom: 64px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 36px;
+  box-shadow: var(--shadow-sm);
+}
+
+.section-header {
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 20px;
+}
+
+.section-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  background-color: var(--bg-subtle);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.section-lead {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* Grids */
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* Data Panels */
+.data-panel {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.panel-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.panel-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.metric-tags-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.metric-item {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  padding: 12px 14px;
+  border-radius: 6px;
+}
+
+.m-val {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.m-lbl {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.category-pills {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.pill-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-right: 4px;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: var(--text-body);
+}
+
+/* Tables */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: var(--bg-subtle);
+  color: var(--text-main);
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 10px 14px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.data-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+}
+
+.data-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.table-total-row td {
+  background-color: var(--bg-subtle);
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
+  font-size: 0.95rem;
+}
+
+.secondary-total td {
+  background-color: #f0fdf4;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-lg {
+  font-size: 1.1rem;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-primary {
+  color: var(--brand-navy);
+}
+
+.text-success {
+  color: var(--accent-green);
+}
+
+.text-danger {
+  color: var(--accent-red);
+}
+
+/* Problem Cards */
+.problem-card {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.problem-num {
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.problem-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.problem-desc {
+  font-size: 0.88rem;
+  color: var(--text-body);
+  line-height: 1.5;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.solution-tag {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  color: var(--text-main);
+}
+
+.sol-icon {
+  color: var(--accent-green);
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+/* Architecture Section */
+.architecture-box {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 28px;
+}
+
+.arch-top-layer, .arch-bottom-layer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.arch-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+  border-top: 3px solid var(--brand-navy);
+}
+
+.arch-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.arch-card h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.arch-card p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.arch-core-hub {
+  margin: 20px 0;
+  background-color: #1e293b;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hub-icon {
+  font-size: 1.8rem;
+}
+
+.hub-content h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.hub-content p {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  margin-top: 2px;
+}
+
+.arch-insight-banner {
+  margin-top: 18px;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-left: 4px solid #0284c7;
+  border-radius: 6px;
+  padding: 14px 18px;
+}
+
+.insight-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0284c7;
+}
+
+.insight-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.insight-desc {
+  font-size: 0.82rem;
+  color: var(--text-body);
+}
+
+.arch-architecture-note {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  padding: 12px 16px;
+  border-radius: 6px;
+}
+
+.note-bullet {
+  font-weight: 800;
+  color: var(--brand-navy);
+}
+
+/* Workflow Badges */
+.workflow-badge {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.badge-app {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background-color: var(--bg-subtle);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+}
+
+.app-inv { border-left: 3px solid var(--app-inv); }
+.app-crm { border-left: 3px solid var(--app-crm); }
+.app-people { border-left: 3px solid var(--app-people); }
+.app-desk { border-left: 3px solid var(--app-desk); }
+.app-books { border-left: 3px solid var(--app-books); }
+.app-analytics { border-left: 3px solid var(--app-analytics); }
+.app-me { border-left: 3px solid var(--app-me); }
+
+.callout-box {
+  background-color: var(--accent-amber-bg);
+  border: 1px solid var(--accent-amber-border);
+  border-radius: 8px;
+  padding: 16px 20px;
+  font-size: 0.88rem;
+  color: #78350f;
+}
+
+.callout-title {
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+/* Product Cards */
+.product-detail-card {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-detail-card.full-width {
+  grid-column: 1 / -1;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.app-chip {
+  font-size: 0.85rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.scope-chip {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.product-detail-card h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+
+.product-detail-card p {
+  font-size: 0.85rem;
+  color: var(--text-body);
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.req-box {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.req-box strong {
+  color: var(--text-main);
+}
+
+.checklist-panel {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.checklist-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 14px;
+}
+
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.check-item {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chk {
+  color: var(--accent-green);
+  font-weight: 800;
+}
+
+/* Comparison Table */
+.comp-table th.danger-header {
+  background-color: #fef2f2;
+  color: #991b1b;
+}
+
+.comp-table th.success-header {
+  background-color: #f0fdf4;
+  color: #166534;
+}
+
+.quote-analysis-card {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.qa-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.qa-col h5 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.qa-col p {
+  font-size: 0.85rem;
+  color: var(--text-body);
+  line-height: 1.5;
+}
+
+/* Cost Summary Bar */
+.cost-summary-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+
+.cost-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.cs-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.cs-val {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--text-main);
+  font-family: var(--font-sans);
+}
+
+.cs-sub {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.cost-plus, .cost-equals {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-muted);
+}
+
+.highlight-yr1 {
+  background-color: #ffffff;
+  border: 2px solid var(--brand-navy);
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.highlight-yr1 .cs-val {
+  color: var(--brand-navy);
+}
+
+.subtotal-row td {
+  background-color: #f8fafc;
+  font-weight: 700;
+}
+
+.note-box {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 14px 18px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.note-box strong, .note-box em {
+  color: var(--text-main);
+}
+
+/* Benefit Filters & Split */
+.filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-right: 6px;
+}
+
+.filter-btn {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all 0.15s ease;
+}
+
+.filter-btn:hover {
+  border-color: #cbd5e1;
+  color: var(--text-main);
+}
+
+.filter-btn.active {
+  background-color: var(--brand-navy);
+  color: #ffffff;
+  border-color: var(--brand-navy);
+}
+
+.split-card {
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.card-cash {
+  background-color: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.card-time {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.split-hdr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.split-hdr h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.split-val {
+  font-size: 1.15rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+}
+
+.card-cash .split-val { color: var(--accent-green); }
+.card-time .split-val { color: #0284c7; }
+
+.split-card p {
+  font-size: 0.82rem;
+  color: var(--text-body);
+}
+
+.type-pill {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.type-cash {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.type-time {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+/* ROI Scenario Selector */
+.scenario-selector-card {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.scenario-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.scenario-header h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.scenario-btn-group {
+  display: flex;
+  gap: 6px;
+}
+
+.scen-btn {
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid var(--border-color);
+  background-color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all 0.15s ease;
+}
+
+.scen-btn.active {
+  background-color: var(--brand-navy);
+  color: #ffffff;
+  border-color: var(--brand-navy);
+}
+
+.scenario-display-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.scen-stat-box {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.scen-stat-lbl {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.scen-stat-val {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-main);
+  font-family: var(--font-mono);
+}
+
+.scen-stat-desc {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.scen-row {
+  transition: background-color 0.15s ease;
+}
+
+.highlight-row {
+  background-color: #f8fafc;
+  outline: 2px solid var(--brand-navy);
+}
+
+.text-sm {
+  font-size: 0.75rem;
+}
+
+.roi-insights-box {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.roi-insights-box h5 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+
+.roi-insights-box ul {
+  padding-left: 20px;
+  font-size: 0.85rem;
+  color: var(--text-body);
+}
+
+.roi-insights-box li {
+  margin-bottom: 6px;
+}
+
+/* Risk Badges */
+.risk-badge {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.risk-high { color: var(--accent-red); }
+.risk-med { color: var(--accent-amber); }
+.risk-compliance { color: #0284c7; }
+.risk-org { color: #6d28d9; }
+
+/* Timeline Roadmap */
+.timeline-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.phase-card {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-phase {
+  border-color: var(--brand-navy);
+  border-width: 2px;
+  background-color: #ffffff;
+}
+
+.phase-num {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.phase-duration {
+  font-size: 0.85rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--brand-navy);
+  margin-bottom: 8px;
+}
+
+.phase-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 14px;
+}
+
+.phase-body {
+  flex-grow: 1;
+}
+
+.phase-body ul {
+  padding-left: 18px;
+  font-size: 0.82rem;
+  color: var(--text-body);
+}
+
+.phase-body li {
+  margin-bottom: 8px;
+}
+
+.phase-milestone {
+  margin-top: 16px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-green);
+}
+
+.rollout-footer-note {
+  margin-top: 24px;
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.85rem;
+  color: var(--text-body);
+}
+
+.note-icon {
+  font-size: 1.4rem;
+}
+
+/* Recommendation Banner & Action Plan */
+.rec-banner {
+  background-color: var(--brand-navy);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.rec-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.rec-banner h3 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.rec-banner p {
+  font-size: 0.95rem;
+  color: #e2e8f0;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.action-card, .pilot-budget-card {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.action-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 16px;
+}
+
+.action-list {
+  padding-left: 20px;
+  font-size: 0.85rem;
+}
+
+.action-list li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.action-list strong {
+  color: var(--text-main);
+}
+
+.pilot-breakdown {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.pb-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.total-pb {
+  background-color: var(--bg-subtle);
+  border-bottom: none;
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.pilot-saving-highlight {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 6px;
+  padding: 12px 14px;
+  font-size: 0.82rem;
+  color: #166534;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #ffffff;
+  border-top: 1px solid var(--border-color);
+  padding: 32px 0;
+  font-size: 0.82rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-brand {
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.footer-sub {
+  color: var(--text-muted);
+}
+
+/* Helpers */
+.mt-2 { margin-top: 8px; }
+.mt-4 { margin-top: 16px; }
+.mt-6 { margin-top: 24px; }
+.mb-4 { margin-bottom: 16px; }
+.mb-6 { margin-bottom: 24px; }
+.mb-8 { margin-bottom: 32px; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .grid-2col, .qa-grid, .timeline-container, .arch-top-layer, .arch-bottom-layer {
+    grid-template-columns: 1fr;
+  }
+  
+  .cost-summary-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .cost-plus, .cost-equals {
+    display: none;
+  }
+  
+  .hero-title {
+    font-size: 1.85rem;
+  }
+}
+
+/* Print Optimization for Board Packets */
+@media print {
+  .site-header, .header-actions, .filter-controls, .scenario-btn-group, .site-footer {
+    display: none !important;
+  }
+  
+  body {
+    background-color: #ffffff;
+    font-size: 11pt;
+  }
+  
+  .content-block {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    page-break-inside: avoid;
+    margin-bottom: 24px;
+    padding: 18px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="brand-badge">
+        <span class="brand-logo-text">GrandMart</span>
+        <span class="brand-divider">/</span>
+        <span class="brand-sub">Zoho Executive Proposal</span>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#overview">Overview</a>
+        <a href="#scale">Operations</a>
+        <a href="#challenges">Problems</a>
+        <a href="#architecture">Ecosystem</a>
+        <a href="#workflows">Workflows</a>
+        <a href="#products">Products</a>
+        <a href="#comparison">Zoho vs Patchwork</a>
+        <a href="#costs">Investment</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#roi">ROI & Scenarios</a>
+        <a href="#risks">Risks & Security</a>
+        <a href="#rollout">Rollout</a>
+        <a href="#recommendations">Next Steps</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-secondary btn-sm" onclick="window.print()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+          Print Brief
+        </button>
+        <a href="#recommendations" class="btn btn-primary btn-sm">Pilot Plan</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero / Executive Brief -->
+  <section class="hero-section" id="overview">
+    <div class="container">
+      <div class="meta-tag-row">
+        <span class="status-pill status-ready">Presented to Management</span>
+        <span class="meta-date">Chennai, India &bull; November 2026</span>
+        <span class="meta-scope">2 Branches &bull; 610 Staff &bull; Unified Retail OS</span>
+      </div>
+
+      <h1 class="hero-title">GrandMart: From Disconnected Operations to One Retail Operating System</h1>
+      <p class="hero-subtitle">
+        A strategic plan to replace fragmented legacy tools across two Chennai branches with an integrated 
+        Zoho and ManageEngine retail operating backbone.
+      </p>
+
+      <!-- Key KPI Grid -->
+      <div class="kpi-strip">
+        <div class="kpi-card">
+          <div class="kpi-label">Annual Revenue</div>
+          <div class="kpi-value">₹240 Cr</div>
+          <div class="kpi-sub">Across 2 Chennai retail branches</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Headcount</div>
+          <div class="kpi-value">610</div>
+          <div class="kpi-sub">Fixed employee operational base</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Year 1 Total Cost</div>
+          <div class="kpi-value">₹96.0 L</div>
+          <div class="kpi-sub">Licences + Admin + ₹25L Setup</div>
+        </div>
+        <div class="kpi-card highlight-benefit">
+          <div class="kpi-label">Annual Run-Rate Benefit</div>
+          <div class="kpi-value">₹153.0 L</div>
+          <div class="kpi-sub">₹71L Direct Cash + ₹82L Staff Time</div>
+        </div>
+        <div class="kpi-card highlight-roi">
+          <div class="kpi-label">3-Year Net ROI</div>
+          <div class="kpi-value">~67%</div>
+          <div class="kpi-sub">~13 mo payback (Base Case)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Section: GrandMart At A Glance -->
+      <section class="content-block" id="scale">
+        <div class="section-header">
+          <div class="section-badge">Slide 2</div>
+          <h2 class="section-title">GrandMart at a Glance</h2>
+          <p class="section-lead">"Everything You Need, Under One Roof." Baseline operational scope and retail footprint.</p>
+        </div>
+
+        <div class="grid-2col mb-8">
+          <!-- Retail Profile Card -->
+          <div class="data-panel">
+            <h3 class="panel-heading">Retail Operations & Planning Assumptions</h3>
+            <p class="panel-desc">
+              The employee headcount of 610 is fixed across both branches. The operational metrics below 
+              serve as the mathematical foundation for all ROI and financial projections.
+            </p>
+            <div class="metric-tags-list">
+              <div class="metric-item">
+                <span class="m-val">2</span>
+                <span class="m-lbl">Branches (Chennai)</span>
+              </div>
+              <div class="metric-item">
+                <span class="m-val">610</span>
+                <span class="m-lbl">Total Employees</span>
+              </div>
+              <div class="metric-item">
+                <span class="m-val">8</span>
+                <span class="m-lbl">Core Categories</span>
+              </div>
+              <div class="metric-item">
+                <span class="m-val">40,000</span>
+                <span class="m-lbl">Active SKUs</span>
+              </div>
+              <div class="metric-item">
+                <span class="m-val">5,400</span>
+                <span class="m-lbl">Daily Txns (5k Store + 400 Online)</span>
+              </div>
+              <div class="metric-item">
+                <span class="m-val">300</span>
+                <span class="m-lbl">Active Suppliers</span>
+              </div>
+              <div class="metric-item">
+                <span class="m-val">₹240 Cr</span>
+                <span class="m-lbl">Annual Revenue</span>
+              </div>
+              <div class="metric-item">
+                <span class="m-val">18%</span>
+                <span class="m-lbl">Gross Margin Model</span>
+              </div>
+            </div>
+
+            <div class="category-pills mt-4">
+              <span class="pill-title">8 Product Categories:</span>
+              <span class="tag">Grocery</span>
+              <span class="tag">Fashion</span>
+              <span class="tag">Electronics</span>
+              <span class="tag">Appliances</span>
+              <span class="tag">Home</span>
+              <span class="tag">Beauty</span>
+              <span class="tag">Books</span>
+              <span class="tag">Toys</span>
+            </div>
+          </div>
+
+          <!-- Department Headcount Table -->
+          <div class="data-panel">
+            <h3 class="panel-heading">Department Headcount & Allocation (610 Staff)</h3>
+            <div class="table-responsive">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Department</th>
+                    <th class="text-right">Staff</th>
+                    <th>Key Focus & Scope</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Store operations and sales floor</strong></td>
+                    <td class="text-right font-mono font-bold">360</td>
+                    <td>Billing, floor management, merchandising</td>
+                  </tr>
+                  <tr>
+                    <td><strong>E-commerce and delivery</strong></td>
+                    <td class="text-right font-mono font-bold">70</td>
+                    <td>Online order fulfillment, local delivery</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Inventory and warehouse</strong></td>
+                    <td class="text-right font-mono font-bold">60</td>
+                    <td>Stock inwarding, transfers, procurement</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Sales and marketing</strong></td>
+                    <td class="text-right font-mono font-bold">30</td>
+                    <td>Loyalty programs, promotions, campaigns</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Customer support</strong></td>
+                    <td class="text-right font-mono font-bold">25</td>
+                    <td>Customer complaints, resolutions, returns</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Finance</strong></td>
+                    <td class="text-right font-mono font-bold">20</td>
+                    <td>Accounting, vendor payments, GST, audit</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Administration and management</strong></td>
+                    <td class="text-right font-mono font-bold">18</td>
+                    <td>Store approvals, policies, branch oversight</td>
+                  </tr>
+                  <tr>
+                    <td><strong>HR</strong></td>
+                    <td class="text-right font-mono font-bold">15</td>
+                    <td>Attendance, leave, shift planning, hiring</td>
+                  </tr>
+                  <tr>
+                    <td><strong>IT</strong></td>
+                    <td class="text-right font-mono font-bold">12</td>
+                    <td>POS hardware, back-office PCs, networks</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr class="table-total-row">
+                    <td><strong>Total Staff</strong></td>
+                    <td class="text-right font-mono font-bold">610</td>
+                    <td>100% Covered by Proposed Operating Model</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Six Problems That Compound at Scale -->
+      <section class="content-block" id="challenges">
+        <div class="section-header">
+          <div class="section-badge">Slide 3</div>
+          <h2 class="section-title">Six Problems That Compound at Scale</h2>
+          <p class="section-lead">Disconnected tools create friction, stockouts, customer dissatisfaction, and administrative drain.</p>
+        </div>
+
+        <div class="grid-3col">
+          <div class="problem-card">
+            <div class="problem-num">01</div>
+            <h4 class="problem-title">Inventory Blindness</h4>
+            <p class="problem-desc">
+              Stock is disconnected across branches and online channels. Items oversell online while sitting idle in store, causing lost sales and stockouts.
+            </p>
+            <div class="solution-tag">
+              <span class="sol-icon">&#10003;</span> Solution: <strong>Zoho Inventory</strong>
+            </div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-num">02</div>
+            <h4 class="problem-title">Anonymous Customers</h4>
+            <p class="problem-desc">
+              No purchase history tracking or unified loyalty system. Store marketing is broad, untargeted, and unable to drive personalized repeat visits.
+            </p>
+            <div class="solution-tag">
+              <span class="sol-icon">&#10003;</span> Solution: <strong>Zoho CRM</strong>
+            </div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-num">03</div>
+            <h4 class="problem-title">Manual HR Overload</h4>
+            <p class="problem-desc">
+              15 HR staff manually track attendance, shifts, and leave for 610 employees across 2 branches, creating severe administrative drag and payroll errors.
+            </p>
+            <div class="solution-tag">
+              <span class="sol-icon">&#10003;</span> Solution: <strong>Zoho People &amp; Payroll</strong>
+            </div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-num">04</div>
+            <h4 class="problem-title">Support Black Holes</h4>
+            <p class="problem-desc">
+              Customer complaints arriving via phone, store counter, and social media lack central ticketing. Without SLAs, customer tickets get lost or delayed.
+            </p>
+            <div class="solution-tag">
+              <span class="sol-icon">&#10003;</span> Solution: <strong>Zoho Desk</strong>
+            </div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-num">05</div>
+            <h4 class="problem-title">Reporting Lag</h4>
+            <p class="problem-desc">
+              Finance manually reconciles disconnected spreadsheets and registers. Management lacks real-time, consolidated P&amp;L and stock visibility across branches.
+            </p>
+            <div class="solution-tag">
+              <span class="sol-icon">&#10003;</span> Solution: <strong>Zoho Books &amp; Analytics</strong>
+            </div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-num">06</div>
+            <h4 class="problem-title">POS Downtime Risk</h4>
+            <p class="problem-desc">
+              About 215 unmanaged devices with inconsistent security patching and manual updates leave checkout billing and customer queues at high risk of disruption.
+            </p>
+            <div class="solution-tag">
+              <span class="sol-icon">&#10003;</span> Solution: <strong>Endpoint Central</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: The Proposed Operating Model -->
+      <section class="content-block" id="architecture">
+        <div class="section-header">
+          <div class="section-badge">Slide 4</div>
+          <h2 class="section-title">The Proposed Operating Model</h2>
+          <p class="section-lead">A unified business architecture linking retail frontlines, warehouse logistics, and corporate management.</p>
+        </div>
+
+        <div class="architecture-box">
+          <div class="arch-top-layer">
+            <div class="arch-card arch-crm">
+              <div class="arch-tag">Front-Office</div>
+              <h4>Zoho CRM</h4>
+              <p>Marketing, customer profiles &amp; loyalty tracking</p>
+            </div>
+            <div class="arch-card arch-desk">
+              <div class="arch-tag">Customer Care</div>
+              <h4>Zoho Desk</h4>
+              <p>Unified support ticketing, SLAs &amp; return tracking</p>
+            </div>
+            <div class="arch-card arch-people">
+              <div class="arch-tag">Human Capital</div>
+              <h4>Zoho People + Payroll</h4>
+              <p>Self-service HR, shift rostering, biometric sync &amp; payroll</p>
+            </div>
+          </div>
+
+          <div class="arch-core-hub">
+            <div class="hub-icon">&#9881;</div>
+            <div class="hub-content">
+              <h3>Integrated Zoho Ecosystem &bull; Shared Single Source of Truth</h3>
+              <p>Real-time bidirectional synchronization of customer data, product catalogs, 40,000 SKUs, stock levels, and daily financial postings.</p>
+            </div>
+          </div>
+
+          <div class="arch-bottom-layer">
+            <div class="arch-card arch-inv">
+              <div class="arch-tag">Operations Core</div>
+              <h4>Zoho Inventory</h4>
+              <p>2 store branches + warehouse stock, batch tracking &amp; transfers</p>
+            </div>
+            <div class="arch-card arch-books">
+              <div class="arch-tag">Finance &amp; Audit</div>
+              <h4>Zoho Books</h4>
+              <p>GST-compliant ledger, automated bank reconciliation &amp; P&amp;L</p>
+            </div>
+            <div class="arch-card arch-me">
+              <div class="arch-tag">IT Infrastructure</div>
+              <h4>Endpoint Central</h4>
+              <p>ManageEngine centralized patch &amp; endpoint security (~215 devices)</p>
+            </div>
+          </div>
+
+          <div class="arch-insight-banner">
+            <div class="insight-label">Executive Intelligence Layer</div>
+            <div class="insight-title">Zoho Analytics</div>
+            <div class="insight-desc">
+              Cross-department management dashboards consolidating real-time sales, inventory turns, service SLAs, 
+              and branch-by-branch profitability.
+            </div>
+          </div>
+
+          <div class="arch-architecture-note">
+            <div class="note-bullet">i</div>
+            <div>
+              <strong>Architecture &amp; Licensing Note:</strong> Endpoint Central is a ManageEngine enterprise product 
+              integrated into the Zoho suite via Zoho Flow webhooks and REST APIs. The seven products in this proposal are 
+              priced as dedicated standalone tiers to match GrandMart's exact user quotas, rather than the broad Zoho One bundle.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Workflows: One Sale, One Complaint, One Source of Truth -->
+      <section class="content-block" id="workflows">
+        <div class="section-header">
+          <div class="section-badge">Slide 5</div>
+          <h2 class="section-title">One Sale, One Complaint, One Source of Truth</h2>
+          <p class="section-lead">How operational events flow seamlessly across departments without human re-entry or data leakage.</p>
+        </div>
+
+        <div class="workflow-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th style="width: 22%;">Operational Workflow</th>
+                <th style="width: 22%;">Primary Tool</th>
+                <th>What Flows Downstream</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="workflow-badge">1. Sales Event</span>
+                  <strong>Store or online sale</strong>
+                </td>
+                <td><span class="badge-app app-inv">Zoho Inventory</span></td>
+                <td>
+                  Stock deducts instantly in real time; sales post directly to <strong>Zoho Books</strong> (consolidated as daily financial summaries for POS transactions); customer purchase records automatically flow to <strong>Zoho CRM</strong>.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="workflow-badge">2. Procurement</span>
+                  <strong>Stock replenishment</strong>
+                </td>
+                <td><span class="badge-app app-inv">Zoho Inventory</span></td>
+                <td>
+                  Automated low-stock threshold alert triggers a Purchase Order to supplier; on receipt of stock, matching supplier bill is created automatically in <strong>Zoho Books</strong> for 3-way matching.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="workflow-badge">3. Customer Service</span>
+                  <strong>Complaint or return</strong>
+                </td>
+                <td><span class="badge-app app-desk">Zoho Desk</span></td>
+                <td>
+                  Support ticket is created with SLA timers; automatically linked to original order in <strong>Zoho Inventory</strong> and payment record in <strong>Zoho Books</strong> for swift, authorized refunds and replacement tracking.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="workflow-badge">4. Human Resources</span>
+                  <strong>Attendance &amp; leave</strong>
+                </td>
+                <td><span class="badge-app app-people">Zoho People</span></td>
+                <td>
+                  Biometric punch and approved leave days flow automatically into <strong>Zoho Payroll</strong> module; payroll disbursement journal entries are posted directly to <strong>Zoho Books</strong>.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="workflow-badge">5. IT Security</span>
+                  <strong>IT patching &amp; POS safety</strong>
+                </td>
+                <td><span class="badge-app app-me">Endpoint Central</span></td>
+                <td>
+                  All POS terminals and back-office workstations are patched and updated centrally off-peak; device health and compliance audit logs link to Zoho administrative dashboards via <strong>Zoho Flow</strong>.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="workflow-badge">6. Management</span>
+                  <strong>Consolidated reporting</strong>
+                </td>
+                <td><span class="badge-app app-analytics">Zoho Analytics</span></td>
+                <td>
+                  Real-time multi-branch views uniting sales velocity, inventory carrying cost, ticket resolution speed, and labour costs against budget benchmarks.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout-box mt-4">
+          <div class="callout-title">&#9888; Key Implementation Dependencies</div>
+          <p>
+            The physical store POS systems and online ecommerce store require a clean API integration into Zoho Inventory 
+            (custom middleware or certified connector, scoped inside the ₹25L implementation estimate). Biometric attendance 
+            clocks require certified sync middleware to post clock-in logs into Zoho People.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section: What Each Product Changes -->
+      <section class="content-block" id="products">
+        <div class="section-header">
+          <div class="section-badge">Slide 6</div>
+          <h2 class="section-title">What Each Product Changes</h2>
+          <p class="section-lead">Specific operational transformation, scope requirements, and pre-go-live checkpoints for all 7 modules.</p>
+        </div>
+
+        <div class="grid-2col">
+          <div class="product-detail-card">
+            <div class="card-head">
+              <span class="app-chip app-inv">Zoho Inventory</span>
+              <span class="scope-chip">Enterprise Tier</span>
+            </div>
+            <h4>Real-Time Stock &amp; Warehouse Control</h4>
+            <p>
+              Provides instant multi-location inventory across both Chennai branches and the online channel, complete with inter-branch transfers, automated reorder triggers, and barcode/batch tracking.
+            </p>
+            <div class="req-box">
+              <strong>Pre-requisite:</strong> 40,000 SKUs must be standardized and cleaned; POS API connector must be tested.
+            </div>
+          </div>
+
+          <div class="product-detail-card">
+            <div class="card-head">
+              <span class="app-chip app-crm">Zoho CRM</span>
+              <span class="scope-chip">Professional Tier (40 Users)</span>
+            </div>
+            <h4>Customer Purchase History &amp; Loyalty</h4>
+            <p>
+              Stores unified buyer profiles, purchase frequency, and RFM segmentation for personalized customer promotions. Native email marketing built-in.
+            </p>
+            <div class="req-box">
+              <strong>Pre-requisite:</strong> SMS gateway and WhatsApp Business API integration required for mobile campaign delivery.
+            </div>
+          </div>
+
+          <div class="product-detail-card">
+            <div class="card-head">
+              <span class="app-chip app-people">Zoho People + Payroll</span>
+              <span class="scope-chip">Professional (610 Staff)</span>
+            </div>
+            <h4>Workforce Self-Service &amp; Accurate Payroll</h4>
+            <p>
+              Empowers 610 staff with mobile self-service for leave applications, shift rosters, and payslip downloads. Payroll calculates deductions, PF, ESI, and taxes automatically.
+            </p>
+            <div class="req-box">
+              <strong>Pre-requisite:</strong> Zoho Payroll module is a dedicated add-on licence; requires biometric middleware configuration.
+            </div>
+          </div>
+
+          <div class="product-detail-card">
+            <div class="card-head">
+              <span class="app-chip app-desk">Zoho Desk</span>
+              <span class="scope-chip">Professional Tier (25 Agents)</span>
+            </div>
+            <h4>Omnichannel Customer Service with SLAs</h4>
+            <p>
+              Consolidates customer inquiries from email, in-store desks, and social channels into one prioritized queue with automatic escalation and resolution SLAs.
+            </p>
+            <div class="req-box">
+              <strong>Pre-requisite:</strong> Social channel monitoring requires Standard or above; telephone support requires telephony add-on.
+            </div>
+          </div>
+
+          <div class="product-detail-card">
+            <div class="card-head">
+              <span class="app-chip app-books">Zoho Books</span>
+              <span class="scope-chip">Elite Tier (25 Users)</span>
+            </div>
+            <h4>GST-Ready Accounting &amp; Real-Time Audit</h4>
+            <p>
+              Automates GST return filing, bank statement reconciliation, vendor payables, and live branch P&amp;L reporting.
+            </p>
+            <div class="req-box">
+              <strong>Architectural Rule:</strong> Elite tier has a 100,000 invoice/year threshold. Retail POS sales will post as daily consolidated journal summaries, while granular line items remain in Zoho Inventory.
+            </div>
+          </div>
+
+          <div class="product-detail-card">
+            <div class="card-head">
+              <span class="app-chip app-analytics">Zoho Analytics</span>
+              <span class="scope-chip">Enterprise (50 Users)</span>
+            </div>
+            <h4>Cross-Department Executive Intelligence</h4>
+            <p>
+              Pre-built connectors aggregate data from Books, CRM, Desk, and Inventory into unified executive dashboards for branch managers and senior directors.
+            </p>
+            <div class="req-box">
+              <strong>Pre-requisite:</strong> Direct connector or automated staging pipeline needed for external POS transaction databases.
+            </div>
+          </div>
+
+          <div class="product-detail-card full-width">
+            <div class="card-head">
+              <span class="app-chip app-me">Endpoint Central (ManageEngine)</span>
+              <span class="scope-chip">Enterprise Tier (~215 Endpoints)</span>
+            </div>
+            <h4>Unified Endpoint Management &amp; Patch Automation</h4>
+            <p>
+              Automates operating system and third-party software patching, vulnerability audits, asset inventory, and remote troubleshooting across all checkout POS terminals, back-office computers, and branch servers.
+            </p>
+            <div class="req-box">
+              <strong>Licensing Note:</strong> Licensed strictly per managed endpoint device (~215 units in 5 packs of 50), not per employee headcount.
+            </div>
+          </div>
+        </div>
+
+        <div class="checklist-panel mt-6">
+          <h4 class="checklist-title">Checklist: Mandatory Actions Before Full Go-Live</h4>
+          <div class="checklist-grid">
+            <div class="check-item"><span class="chk">&#10003;</span> Complete POS-to-Zoho Inventory API integration &amp; batch test</div>
+            <div class="check-item"><span class="chk">&#10003;</span> Configure &amp; test biometric attendance middleware</div>
+            <div class="check-item"><span class="chk">&#10003;</span> Cleanse, deduplicate, and standardize 40,000 SKU master records</div>
+            <div class="check-item"><span class="chk">&#10003;</span> Confirm user and transaction limits on Zoho Inventory &amp; Books tiers</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Why Zoho Over a Patchwork of Tools -->
+      <section class="content-block" id="comparison">
+        <div class="section-header">
+          <div class="section-badge">Slide 7</div>
+          <h2 class="section-title">Why Zoho Over a Patchwork of Tools</h2>
+          <p class="section-lead">A direct structural comparison between fragmented point solutions and the integrated Zoho platform.</p>
+        </div>
+
+        <div class="comparison-table-wrap">
+          <table class="data-table comp-table">
+            <thead>
+              <tr>
+                <th style="width: 20%;">Operational Dimension</th>
+                <th style="width: 40%;" class="danger-header">Fragmented Point Tools (Current Risk)</th>
+                <th style="width: 40%;" class="success-header">Zoho Integrated Operating System</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Data Flow</strong></td>
+                <td>Manual CSV exports and imports; daily discrepancies and synchronization delays.</td>
+                <td><span class="text-success font-semibold">Built-in native sync</span> between all Zoho applications; automated Zoho Flow webhooks for external tools.</td>
+              </tr>
+              <tr>
+                <td><strong>User Logins &amp; Security</strong></td>
+                <td>Disjointed passwords and logins per tool; security gaps when employees depart.</td>
+                <td><span class="text-success font-semibold">One unified single sign-on (SSO)</span> across Zoho apps; centralized offboarding control.</td>
+              </tr>
+              <tr>
+                <td><strong>Licensing &amp; Vendor Cost</strong></td>
+                <td>Dozens of software vendors, conflicting renewal dates, and compounding subscription fees.</td>
+                <td><span class="text-success font-semibold">Single consolidated vendor</span>. Significant volume discounting leverage across 610 users.</td>
+              </tr>
+              <tr>
+                <td><strong>Executive Reporting</strong></td>
+                <td>Manual Excel consolidation taking days; backward-looking reports with stale data.</td>
+                <td><span class="text-success font-semibold">Real-time cross-app dashboards</span> in Zoho Analytics with automated scheduled refreshes.</td>
+              </tr>
+              <tr>
+                <td><strong>IT Security &amp; Endpoints</strong></td>
+                <td>Patchwork security, missed updates, vulnerable POS systems without centralized oversight.</td>
+                <td><span class="text-success font-semibold">Endpoint Central</span> delivers unified device patching, remote management, and compliance audits.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="quote-analysis-card mt-6">
+          <div class="qa-grid">
+            <div class="qa-col">
+              <h5>Market Price Comparison (Zoho Partner Sources)</h5>
+              <p>
+                <strong>CRM Pricing:</strong> 25 Enterprise CRM users on Zoho cost approximately <strong>₹7.2 lakh/year</strong>, 
+                compared to approximately <strong>₹39.0 lakh/year</strong> for Salesforce Enterprise — an 81% direct cost reduction.
+              </p>
+              <p class="mt-2">
+                <strong>Business Intelligence:</strong> Zoho Analytics Premium for 15 users is approximately <strong>24% more affordable</strong> 
+                than Microsoft Power BI Pro while offering native pre-built connectors into the retail suite.
+              </p>
+            </div>
+            <div class="qa-col">
+              <h5>Strategic Trade-Off Analysis</h5>
+              <p>
+                Specialist enterprise platforms like Salesforce and SAP offer deeper, highly niche features for massive multinational enterprises. 
+                However, for a 2-branch, 610-employee regional retail leader, <strong>Zoho decisively wins on overall breadth, seamless native integration, 
+                lower implementation risk, and total cost of ownership (TCO).</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Cost Breakdown -->
+      <section class="content-block" id="costs">
+        <div class="section-header">
+          <div class="section-badge">Slide 8</div>
+          <h2 class="section-title">Cost: About ₹96L in Year 1</h2>
+          <p class="section-lead">Transparent line-item financial budget for software licensing, administrative buffer, and implementation.</p>
+        </div>
+
+        <div class="cost-summary-bar">
+          <div class="cost-stat">
+            <span class="cs-label">Annual Software Subscriptions</span>
+            <span class="cs-val">₹61.7 L</span>
+            <span class="cs-sub">Recurring annual licenses</span>
+          </div>
+          <div class="cost-plus">+</div>
+          <div class="cost-stat">
+            <span class="cs-label">Admin &amp; Support Buffer (15%)</span>
+            <span class="cs-val">₹9.3 L</span>
+            <span class="cs-sub">Contingency &amp; premium support</span>
+          </div>
+          <div class="cost-plus">+</div>
+          <div class="cost-stat">
+            <span class="cs-label">One-Time Implementation</span>
+            <span class="cs-val">₹25.0 L</span>
+            <span class="cs-sub">Migration, custom API &amp; training</span>
+          </div>
+          <div class="cost-equals">=</div>
+          <div class="cost-stat highlight-yr1">
+            <span class="cs-label">Year 1 Total Budget</span>
+            <span class="cs-val">₹96.0 L</span>
+            <span class="cs-sub">Year 2 onward: <strong>₹71.0 L/year</strong></span>
+          </div>
+        </div>
+
+        <div class="table-responsive mt-6">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Software Item</th>
+                <th>Licensing Basis &amp; User Quota</th>
+                <th class="text-right">₹ Lakh / Year</th>
+                <th class="text-right">% of Subscriptions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Zoho People (Professional)</strong></td>
+                <td>610 employees at ₹420 per month (annual billing)</td>
+                <td class="text-right font-mono font-bold">30.7</td>
+                <td class="text-right font-mono text-muted">49.8%</td>
+              </tr>
+              <tr>
+                <td><strong>Zoho Payroll</strong></td>
+                <td>610 employees at ₹80 per month</td>
+                <td class="text-right font-mono font-bold">5.9</td>
+                <td class="text-right font-mono text-muted">9.6%</td>
+              </tr>
+              <tr>
+                <td><strong>Zoho CRM (Professional)</strong></td>
+                <td>40 users at ₹1,400 per month</td>
+                <td class="text-right font-mono font-bold">6.7</td>
+                <td class="text-right font-mono text-muted">10.9%</td>
+              </tr>
+              <tr>
+                <td><strong>Zoho Books (Elite)</strong></td>
+                <td>15 users included, ~10 extra users added</td>
+                <td class="text-right font-mono font-bold">1.0</td>
+                <td class="text-right font-mono text-muted">1.6%</td>
+              </tr>
+              <tr>
+                <td><strong>Zoho Inventory (Enterprise)</strong></td>
+                <td>$249/mo base plus ~70 extra user licenses (placeholder)</td>
+                <td class="text-right font-mono font-bold">7.7</td>
+                <td class="text-right font-mono text-muted">12.5%</td>
+              </tr>
+              <tr>
+                <td><strong>Zoho Desk (Professional)</strong></td>
+                <td>25 customer support agents at ₹1,400 per month</td>
+                <td class="text-right font-mono font-bold">4.2</td>
+                <td class="text-right font-mono text-muted">6.8%</td>
+              </tr>
+              <tr>
+                <td><strong>Zoho Analytics (Enterprise)</strong></td>
+                <td>50 users at ₹9,600 per month</td>
+                <td class="text-right font-mono font-bold">1.2</td>
+                <td class="text-right font-mono text-muted">1.9%</td>
+              </tr>
+              <tr>
+                <td><strong>Endpoint Central (Enterprise)</strong></td>
+                <td>~215 endpoints, 5 packs of 50 at $945/yr (USD at ₹90)</td>
+                <td class="text-right font-mono font-bold">4.3</td>
+                <td class="text-right font-mono text-muted">7.0%</td>
+              </tr>
+              <tr class="subtotal-row">
+                <td colspan="2"><strong>Subtotal: Annual Subscriptions</strong></td>
+                <td class="text-right font-mono font-bold text-primary">61.7</td>
+                <td class="text-right font-mono font-bold">100.0%</td>
+              </tr>
+              <tr>
+                <td><strong>Admin, Support &amp; Contingency</strong></td>
+                <td>Calculated as 15% of annual software subscriptions</td>
+                <td class="text-right font-mono font-bold">9.3</td>
+                <td class="text-right font-mono text-muted">-</td>
+              </tr>
+              <tr>
+                <td><strong>Implementation &amp; Staff Training</strong></td>
+                <td>One-time: POS integration, data migration, user onboarding</td>
+                <td class="text-right font-mono font-bold">25.0</td>
+                <td class="text-right font-mono text-muted">-</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="table-total-row">
+                <td colspan="2"><strong>Year 1 Total Expenditure</strong></td>
+                <td class="text-right font-mono font-bold font-lg">₹96.0 L</td>
+                <td class="text-right text-muted">First year all-in</td>
+              </tr>
+              <tr class="table-total-row secondary-total">
+                <td colspan="2"><strong>Year 2 Onward Steady-State Cost</strong></td>
+                <td class="text-right font-mono font-bold font-lg text-success">₹71.0 L</td>
+                <td class="text-right text-muted">Subscriptions + Admin</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="note-box mt-4">
+          <p>
+            <strong>Pricing Context:</strong> Rates are derived from Indian partner and vendor review sites on annual billing cycles, 
+            with USD exchange modeled at ₹90. <em>Critical budget driver:</em> Zoho People plus Payroll represents <strong>59.4%</strong> of total 
+            subscription spend (₹36.6L of ₹61.7L). Negotiating a volume contract or Zoho One corporate agreement for 610 seats will unlock further savings.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section: Benefits Breakdown -->
+      <section class="content-block" id="benefits">
+        <div class="section-header">
+          <div class="section-badge">Slide 9</div>
+          <h2 class="section-title">Benefits: About ₹153L a Year at Full Run Rate</h2>
+          <p class="section-lead">Rigorous value model based on ₹240 Cr annual revenue and 18% gross margin.</p>
+        </div>
+
+        <!-- Interactive Benefit Filters -->
+        <div class="filter-controls">
+          <span class="filter-label">Filter Benefits:</span>
+          <button class="filter-btn active" onclick="filterBenefits('all', this)">All Benefits (₹153L)</button>
+          <button class="filter-btn" onclick="filterBenefits('cash', this)">Direct Cash Only (₹71L)</button>
+          <button class="filter-btn" onclick="filterBenefits('time', this)">Staff Productivity (₹82L)</button>
+        </div>
+
+        <div class="grid-2col mb-6">
+          <div class="split-card card-cash">
+            <div class="split-hdr">
+              <h4>Direct Cash Improvements</h4>
+              <span class="split-val">₹71.0 Lakh / Year</span>
+            </div>
+            <p>Directly impacts bottom-line gross margin and working capital through inventory shrink reduction, fewer stockouts, and loyalty-driven sales.</p>
+          </div>
+          <div class="split-card card-time">
+            <div class="split-hdr">
+              <h4>Staff Productivity &amp; Labor Optimization</h4>
+              <span class="split-val">₹82.0 Lakh / Year</span>
+            </div>
+            <p>Freed employee bandwidth across 610 staff (54% of total value). Becomes direct cash savings when staff are redeployed to frontline sales or future hiring is avoided.</p>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table" id="benefitsTable">
+            <thead>
+              <tr>
+                <th>Quantified Benefit Area</th>
+                <th>Underlying Operating Assumption</th>
+                <th class="text-right">₹ Lakh / Yr</th>
+                <th>Benefit Classification</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-type="cash">
+                <td><strong>Fewer Stockouts</strong></td>
+                <td>0.3% of revenue recovered at 18% gross margin</td>
+                <td class="text-right font-mono font-bold">13.0</td>
+                <td><span class="type-pill type-cash">Direct Cash</span></td>
+              </tr>
+              <tr data-type="cash">
+                <td><strong>Less Expiry &amp; Damage Waste</strong></td>
+                <td>15% reduction in current ₹1.2 crore of retail shrink</td>
+                <td class="text-right font-mono font-bold">18.0</td>
+                <td><span class="type-pill type-cash">Direct Cash</span></td>
+              </tr>
+              <tr data-type="cash">
+                <td><strong>Lower Excess Inventory Holding</strong></td>
+                <td>5% reduction in ₹25 crore stock holding at 12% carrying cost</td>
+                <td class="text-right font-mono font-bold">15.0</td>
+                <td><span class="type-pill type-cash">Direct Cash</span></td>
+              </tr>
+              <tr data-type="cash">
+                <td><strong>Loyalty &amp; Repeat Purchases</strong></td>
+                <td>0.5% net revenue gain recovered at 18% margin via CRM</td>
+                <td class="text-right font-mono font-bold">22.0</td>
+                <td><span class="type-pill type-cash">Direct Cash</span></td>
+              </tr>
+              <tr data-type="time">
+                <td><strong>HR Administration Time Saved</strong></td>
+                <td>25% productivity gain across the 15-person HR team</td>
+                <td class="text-right font-mono font-bold">18.0</td>
+                <td><span class="type-pill type-time">Staff Time</span></td>
+              </tr>
+              <tr data-type="time">
+                <td><strong>Store Supervisor Shift Time</strong></td>
+                <td>2 hours per week saved for 40 department supervisors</td>
+                <td class="text-right font-mono font-bold">10.0</td>
+                <td><span class="type-pill type-time">Staff Time</span></td>
+              </tr>
+              <tr data-type="time">
+                <td><strong>Finance Reconciliation Time</strong></td>
+                <td>15% productivity gain across the 20-person finance team</td>
+                <td class="text-right font-mono font-bold">15.0</td>
+                <td><span class="type-pill type-time">Staff Time</span></td>
+              </tr>
+              <tr data-type="time">
+                <td><strong>Management Reporting Consolidation</strong></td>
+                <td>1.5 full-time staff equivalents (FTEs) saved from manual Excel consolidation</td>
+                <td class="text-right font-mono font-bold">12.0</td>
+                <td><span class="type-pill type-time">Staff Time</span></td>
+              </tr>
+              <tr data-type="time">
+                <td><strong>Customer Support Agent Productivity</strong></td>
+                <td>15% efficiency boost across the 25-person support team</td>
+                <td class="text-right font-mono font-bold">13.0</td>
+                <td><span class="type-pill type-time">Staff Time</span></td>
+              </tr>
+              <tr data-type="time">
+                <td><strong>IT Administration &amp; POS Uptime</strong></td>
+                <td>20% of IT team time saved (₹14L) + 4 hours of POS outage avoided (₹3L)</td>
+                <td class="text-right font-mono font-bold">17.0</td>
+                <td><span class="type-pill type-time">Mostly Time / Cash</span></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="table-total-row">
+                <td colspan="2"><strong>Total Annual Value at Full Run-Rate</strong></td>
+                <td class="text-right font-mono font-bold font-lg text-success">₹153.0 L</td>
+                <td><strong>₹71L Cash + ₹82L Time</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section: ROI & Scenarios -->
+      <section class="content-block" id="roi">
+        <div class="section-header">
+          <div class="section-badge">Slide 10</div>
+          <h2 class="section-title">ROI: Positive From Year 2, Resilient Under Stress</h2>
+          <p class="section-lead">Sensitivity analysis testing financial resilience across conservative, base, and optimistic scenarios.</p>
+        </div>
+
+        <!-- Interactive Scenario Selector -->
+        <div class="scenario-selector-card">
+          <div class="scenario-header">
+            <h4>Select Financial Modeling Scenario:</h4>
+            <div class="scenario-btn-group">
+              <button class="scen-btn" onclick="selectScenario('conservative', this)">Conservative (-30%)</button>
+              <button class="scen-btn active" onclick="selectScenario('base', this)">Base Case (Expected)</button>
+              <button class="scen-btn" onclick="selectScenario('optimistic', this)">Optimistic (+30%)</button>
+            </div>
+          </div>
+
+          <!-- Dynamic Display Box -->
+          <div class="scenario-display-grid">
+            <div class="scen-stat-box">
+              <span class="scen-stat-lbl">Year 1 Net Position</span>
+              <span class="scen-stat-val" id="scenYr1Net">-₹4.0 L</span>
+              <span class="scen-stat-desc" id="scenYr1Desc">60% benefits realised during rollout</span>
+            </div>
+            <div class="scen-stat-box">
+              <span class="scen-stat-lbl">Year 2 Net Cash Flow</span>
+              <span class="scen-stat-val text-success" id="scenYr2Net">+₹82.0 L</span>
+              <span class="scen-stat-desc" id="scenYr2Desc">Annual benefit minus ₹71L steady cost</span>
+            </div>
+            <div class="scen-stat-box">
+              <span class="scen-stat-lbl">3-Year Projected ROI</span>
+              <span class="scen-stat-val text-primary" id="scenRoi">~67%</span>
+              <span class="scen-stat-desc">Compounded return over 36 months</span>
+            </div>
+            <div class="scen-stat-box">
+              <span class="scen-stat-lbl">Break-Even Payback Period</span>
+              <span class="scen-stat-val" id="scenPayback">~13 months</span>
+              <span class="scen-stat-desc">Capital recovered early in Year 2</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scenario Table -->
+        <div class="table-responsive mt-6">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Scenario Assumption</th>
+                <th class="text-right">Year 1 Net</th>
+                <th class="text-right">Year 2 Net</th>
+                <th class="text-right">3-Year ROI</th>
+                <th class="text-right">Payback Period</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="scen-row" id="row-conservative">
+                <td>
+                  <strong>Conservative Case</strong>
+                  <div class="text-muted text-sm">Benefits degraded by -30% (₹107.1L run-rate)</div>
+                </td>
+                <td class="text-right font-mono font-bold text-danger">-₹32.0 L</td>
+                <td class="text-right font-mono font-bold text-success">+₹36.0 L</td>
+                <td class="text-right font-mono font-bold">~17%</td>
+                <td class="text-right font-mono font-bold">~23 months</td>
+              </tr>
+              <tr class="scen-row highlight-row" id="row-base">
+                <td>
+                  <strong>Base Case (Target Model)</strong>
+                  <div class="text-muted text-sm">Expected run-rate (₹153.0L benefit, 60% Yr 1 capture)</div>
+                </td>
+                <td class="text-right font-mono font-bold">-₹4.0 L</td>
+                <td class="text-right font-mono font-bold text-success">+₹82.0 L</td>
+                <td class="text-right font-mono font-bold text-primary">~67%</td>
+                <td class="text-right font-mono font-bold">~13 months</td>
+              </tr>
+              <tr class="scen-row" id="row-optimistic">
+                <td>
+                  <strong>Optimistic Case</strong>
+                  <div class="text-muted text-sm">Benefits accelerated by +30% (₹198.9L run-rate)</div>
+                </td>
+                <td class="text-right font-mono font-bold text-success">+₹23.0 L</td>
+                <td class="text-right font-mono font-bold text-success">+₹128.0 L</td>
+                <td class="text-right font-mono font-bold text-primary">~118%</td>
+                <td class="text-right font-mono font-bold text-success">Within Year 1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="roi-insights-box mt-4">
+          <h5>Key ROI Drivers &amp; Sensitivities</h5>
+          <ul>
+            <li><strong>Primary Growth &amp; Margin Engines:</strong> Customer loyalty and repeat purchases (<strong>₹22L</strong>), retail waste reduction (<strong>₹18L</strong>), and HR administration recovery (<strong>₹18L</strong>) contribute the vast majority of financial returns.</li>
+            <li><strong>IT Uptime Impact:</strong> Avoiding POS downtime adds <strong>₹3L</strong> in direct cash preservation, but central patching primarily safeguards brand trust and checkout speed.</li>
+            <li><strong>Downside Protection:</strong> Even under the stressful Conservative scenario (-30% underperformance), GrandMart breaks even in ~23 months and generates a positive 17% three-year return.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section: Risks, Limits and Security -->
+      <section class="content-block" id="risks">
+        <div class="section-header">
+          <div class="section-badge">Slide 11</div>
+          <h2 class="section-title">Risks, Limits and Security</h2>
+          <p class="section-lead">Identified operational, technical, and licensing boundaries, paired with concrete mitigation plans.</p>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th style="width: 30%;">Identified Risk &amp; Boundary</th>
+                <th style="width: 70%;">Pre-Emptive Management Action Plan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="risk-badge risk-high">Technical Risk</span>
+                  <strong>POS and online store integration</strong>
+                </td>
+                <td>
+                  Confirm API endpoints and database compatibility prior to project sign-off. All custom integration and middleware development is already budgeted inside the ₹25.0 Lakh implementation allowance.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="risk-badge risk-med">Software Limit</span>
+                  <strong>Books invoice threshold (100k/year)</strong>
+                </td>
+                <td>
+                  GrandMart processes ~5,400 daily transactions (~2 million annually). To respect the 100k annual invoice threshold of Zoho Books Elite, store POS sales will be posted as daily consolidated accounting summaries, while all itemized transaction details reside inside Zoho Inventory.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="risk-badge risk-med">Licensing Scope</span>
+                  <strong>Payroll is a separate product</strong>
+                </td>
+                <td>
+                  Zoho Payroll is budgeted as a standalone line item (₹5.9L). HR will execute one complete parallel payroll test cycle alongside existing legacy methods before full operational cut-over.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="risk-badge risk-med">Hardware Integration</span>
+                  <strong>Biometric attendance sync</strong>
+                </td>
+                <td>
+                  Requires verified third-party sync middleware. IT must validate existing store biometric hardware model compatibility before Phase 1 deployment.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="risk-badge risk-high">Budget Risk</span>
+                  <strong>Licence cost across 610 users</strong>
+                </td>
+                <td>
+                  Zoho People + Payroll constitutes 59% of annual subscription expense. GrandMart management will formally request enterprise volume tier pricing or evaluate Zoho One pricing for all 610 seats.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="risk-badge risk-compliance">Compliance &amp; Data</span>
+                  <strong>Data security &amp; local hosting</strong>
+                </td>
+                <td>
+                  Formally mandate and verify India data-centre hosting for each Zoho and ManageEngine tenant, ensuring full compliance with the Digital Personal Data Protection (DPDP) Act and Indian retail standards.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="risk-badge risk-org">Adoption Risk</span>
+                  <strong>Change management for 610 staff</strong>
+                </td>
+                <td>
+                  Execute comprehensive role-specific training prior to store go-live. Empower 40 store supervisors as floor champions, and stagger rollout by branch to avoid retail disruption.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section: Staged Rollout Roadmap -->
+      <section class="content-block" id="rollout">
+        <div class="section-header">
+          <div class="section-badge">Slide 12</div>
+          <h2 class="section-title">A Staged Rollout That Protects Store Operations</h2>
+          <p class="section-lead">A 90-day phased transformation designed to protect daily cashier billing and customer floor operations.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Phase 1 -->
+          <div class="phase-card">
+            <div class="phase-num">Phase 1</div>
+            <div class="phase-duration">Days 1 – 30</div>
+            <h4 class="phase-title">Foundations &amp; Back-Office</h4>
+            <div class="phase-body">
+              <ul>
+                <li><strong>ManageEngine:</strong> Deploy Endpoint Central on all POS terminals and back-office PCs.</li>
+                <li><strong>Zoho Books:</strong> Establish unified Chart of Accounts, tax masters, and vendor ledgers.</li>
+                <li><strong>Zoho People:</strong> Core employee database migration for all 610 staff members.</li>
+                <li><strong>Training:</strong> Comprehensive initial enablement for HR team and store supervisors first.</li>
+              </ul>
+            </div>
+            <div class="phase-milestone">Milestone: Secure endpoints &amp; clean financial foundation</div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="phase-card highlight-phase">
+            <div class="phase-num">Phase 2</div>
+            <div class="phase-duration">Days 31 – 60</div>
+            <h4 class="phase-title">Retail Core &amp; Pilot Branch</h4>
+            <div class="phase-body">
+              <ul>
+                <li><strong>Zoho Inventory:</strong> Go-live in Branch 1 with POS integration and 40,000 SKUs.</li>
+                <li><strong>Zoho CRM:</strong> Customer purchase history migration and segmentation launch.</li>
+                <li><strong>Zoho Desk:</strong> Centralized ticket queues, routing rules, and SLA workflows.</li>
+                <li><strong>Workforce:</strong> Roll out employee self-service mobile app; run parallel payroll cycle.</li>
+              </ul>
+            </div>
+            <div class="phase-milestone">Milestone: Live retail pilot running smoothly in Branch 1</div>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="phase-card">
+            <div class="phase-num">Phase 3</div>
+            <div class="phase-duration">Days 61 – 90</div>
+            <h4 class="phase-title">Multi-Branch Scale &amp; Insights</h4>
+            <div class="phase-body">
+              <ul>
+                <li><strong>Branch 2 Rollout:</strong> Extend Inventory, POS sync, and store workflows to Branch 2.</li>
+                <li><strong>Zoho Analytics:</strong> Executive management dashboards across both stores.</li>
+                <li><strong>Optimization:</strong> Fine-tune cross-app automations and replenishment thresholds.</li>
+                <li><strong>Review:</strong> Benchmark operational productivity gains against the baseline ROI targets.</li>
+              </ul>
+            </div>
+            <div class="phase-milestone">Milestone: Full 2-branch go-live &amp; executive dashboarding</div>
+          </div>
+        </div>
+
+        <div class="rollout-footer-note">
+          <div class="note-icon">&#128337;</div>
+          <div>
+            <strong>Timeline Stabilization Guardrail:</strong> 90 days represents the disciplined milestone for initial 
+            two-branch go-live. Management should budget <strong>4 to 6 months</strong> to fully stabilize operational workflows, 
+            complete employee habit formation, and fine-tune cross-app automations across all seven systems.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Recommendation & Next Steps -->
+      <section class="content-block" id="recommendations">
+        <div class="section-header">
+          <div class="section-badge">Slide 13</div>
+          <h2 class="section-title">Recommendation: Approve a One-Branch Pilot</h2>
+          <p class="section-lead">Pragmatic decision framework to de-risk investment and validate retail gains before full commitment.</p>
+        </div>
+
+        <div class="rec-banner">
+          <div class="rec-badge">Core Strategic Decision</div>
+          <h3>Adopt the Zoho Ecosystem as GrandMart's Retail Operating System</h3>
+          <p>
+            Commence immediately with the 30-day Foundations phase and approve a live retail pilot in Branch 1 
+            to validate operational workflows, POS latency, and cashier adoption before full capital deployment.
+          </p>
+        </div>
+
+        <div class="grid-2col mt-6">
+          <!-- Next Steps -->
+          <div class="action-card">
+            <h4 class="action-title">Immediate 5-Step Management Action Plan</h4>
+            <ol class="action-list">
+              <li>
+                <strong>Master Data Audit:</strong> Complete an immediate data audit of all 40,000 SKUs, stock categories, and existing customer phone numbers for hygiene.
+              </li>
+              <li>
+                <strong>Vendor Compatibility Review:</strong> Formally review POS hardware, ecommerce storefront API, and biometric attendance clock compatibility with Zoho partners.
+              </li>
+              <li>
+                <strong>Appoint Internal PM:</strong> Assign a dedicated full-time internal Project Manager to steward the 90-day staged rollout.
+              </li>
+              <li>
+                <strong>Commercial Price Negotiation:</strong> Approach Zoho enterprise sales to request bulk volume discounting or Zoho One quote for 610 users.
+              </li>
+              <li>
+                <strong>License Limit Confirmation:</strong> Confirm high-volume transaction allowances on Zoho Inventory and Books plans before contract execution.
+              </li>
+            </ol>
+          </div>
+
+          <!-- Pilot Budget -->
+          <div class="pilot-budget-card">
+            <h4 class="action-title">De-Risked Pilot Budget Allocation</h4>
+            <p class="mb-4">
+              Full-scale Phase 1 annual licensing for all 610 staff totals ~<strong>₹36.0 Lakh</strong> across core foundations:
+            </p>
+            <div class="pilot-breakdown">
+              <div class="pb-row">
+                <span>Zoho People (All 610 staff)</span>
+                <span class="font-mono">₹30.7 L</span>
+              </div>
+              <div class="pb-row">
+                <span>Zoho Books (Elite finance tier)</span>
+                <span class="font-mono">₹1.0 L</span>
+              </div>
+              <div class="pb-row">
+                <span>Endpoint Central (~215 devices)</span>
+                <span class="font-mono">₹4.3 L</span>
+              </div>
+              <div class="pb-row total-pb">
+                <span>Phase 1 Baseline Licenses</span>
+                <span class="font-mono font-bold">~₹36.0 L</span>
+              </div>
+            </div>
+
+            <div class="pilot-saving-highlight mt-4">
+              <strong>Pilot Cost Advantage:</strong> Limiting the initial Phase 1/2 pilot strictly to Branch 1 
+              roughly <strong>halves the Zoho People subscription commitment</strong> during evaluation, providing a 
+              low-capital gateway to prove ROI before full organizational scale.
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="footer-brand">GrandMart Retail Operating System Proposal</div>
+        <p class="footer-sub">Prepared for Board &amp; Senior Management Review &bull; Chennai, November 2026</p>
+      </div>
+      <div class="footer-right">
+        <button class="btn btn-secondary btn-sm" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to Top &uarr;</button>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+/**
+ * GrandMart Retail Operating System - Interactive Scripts
+ * Provides scenario modeling switching, benefit filter toggling, and clean scroll spy.
+ */
+
+// ROI Scenario Data Model (Matches Slide 10 exact figures)
+const scenarios = {
+  conservative: {
+    yr1Net: "-₹32.0 L",
+    yr1Desc: "Benefits degraded by -30% during pilot rollout",
+    yr2Net: "+₹36.0 L",
+    yr2Desc: "Run rate net cash flow at -30% realization",
+    roi: "~17%",
+    payback: "~23 months",
+    rowId: "row-conservative"
+  },
+  base: {
+    yr1Net: "-₹4.0 L",
+    yr1Desc: "60% benefits realised during rollout year",
+    yr2Net: "+₹82.0 L",
+    yr2Desc: "Full ₹153L benefit minus ₹71L steady cost",
+    roi: "~67%",
+    payback: "~13 months",
+    rowId: "row-base"
+  },
+  optimistic: {
+    yr1Net: "+₹23.0 L",
+    yr1Desc: "Accelerated adoption and faster inventory shrink cuts",
+    yr2Net: "+₹128.0 L",
+    yr2Desc: "Benefits accelerated by +30% across both branches",
+    roi: "~118%",
+    payback: "Within Year 1",
+    rowId: "row-optimistic"
+  }
+};
+
+function selectScenario(type, btnElement) {
+  // Update button active state
+  document.querySelectorAll('.scen-btn').forEach(btn => btn.classList.remove('active'));
+  if (btnElement) {
+    btnElement.classList.add('active');
+  }
+
+  // Update dynamic values
+  const data = scenarios[type];
+  if (!data) return;
+
+  document.getElementById('scenYr1Net').textContent = data.yr1Net;
+  document.getElementById('scenYr1Desc').textContent = data.yr1Desc;
+  document.getElementById('scenYr2Net').textContent = data.yr2Net;
+  document.getElementById('scenYr2Desc').textContent = data.yr2Desc;
+  document.getElementById('scenRoi').textContent = data.roi;
+  document.getElementById('scenPayback').textContent = data.payback;
+
+  // Highlight corresponding row in table
+  document.querySelectorAll('.scen-row').forEach(row => row.classList.remove('highlight-row'));
+  const targetRow = document.getElementById(data.rowId);
+  if (targetRow) {
+    targetRow.classList.add('highlight-row');
+  }
+}
+
+// Benefit Classification Filter (Matches Slide 9 breakdown)
+function filterBenefits(category, btnElement) {
+  // Update button active state
+  document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+  if (btnElement) {
+    btnElement.classList.add('active');
+  }
+
+  const rows = document.querySelectorAll('#benefitsTable tbody tr');
+  rows.forEach(row => {
+    const type = row.getAttribute('data-type');
+    if (category === 'all') {
+      row.style.display = '';
+    } else if (category === type) {
+      row.style.display = '';
+    } else {
+      row.style.display = 'none';
+    }
+  });
+}
+
+// Navigation active state updater on scroll
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.content-block, .hero-section');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    let currentId = '';
+    const scrollPos = window.scrollY + 120;
+
+    sections.forEach(sec => {
+      const top = sec.offsetTop;
+      const height = sec.offsetHeight;
+      if (scrollPos >= top && scrollPos < top + height) {
+        currentId = sec.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.style.color = '';
+      if (link.getAttribute('href') === `#${currentId}`) {
+        link.style.color = 'var(--text-main)';
+        link.style.fontWeight = '700';
+      } else {
+        link.style.fontWeight = '600';
+      }
+    });
+  });
+});
+
+</script>
+</body>
+</html>
